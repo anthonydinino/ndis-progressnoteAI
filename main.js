@@ -14,7 +14,7 @@ submitButton.innerHTML = submitButtonText;
 
 // Checks if API key is currently being stored in local storage
 const apiKeyHTML = document.querySelector("#api-key");
-const apiKey = localStorage.getItem("apiKey");
+let apiKey = localStorage.getItem("apiKey");
 if (apiKey) {
     apiKeyHTML.value = apiKey;
 }
